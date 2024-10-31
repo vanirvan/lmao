@@ -15,8 +15,8 @@
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    window.scrollY >= 150 && selectBody.classList.add('scrolled');
+    window.scrollY <= 100 && selectBody.classList.remove('scrolled');
   }
 
   document.addEventListener('scroll', toggleScrolled);
@@ -75,7 +75,8 @@
 
   function toggleScrollTop() {
     if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      window.scrollY >= 150 && scrollTop.classList.add('active');
+      window.scrollY <= 100 && scrollTop.classList.remove('active');
     }
   }
   scrollTop.addEventListener('click', (e) => {

@@ -190,7 +190,6 @@ h6 {
   color: color-mix(in srgb, var(--contrast-color), transparent 40%);
   line-height: 0;
   transition: 0.3s;
-  margin-left: 20px;
 }
 
 .header .topbar .social-links a:hover {
@@ -845,13 +844,15 @@ section,
   padding: 60px 0;
   display: flex;
   align-items: center;
-  background: url("../img/hero-bg.jpg") top left;
+  background: url("../img/hero-bg.jpeg") top left;
   background-size: cover;
+  background-position: right;
 }
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 30%); */
+  background: linear-gradient(90deg, rgba(7,74,8,1) 0%, rgba(255,255,255,0) 100%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -868,6 +869,7 @@ section,
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
+  color: white;
 }
 
 .hero h1 span {
@@ -875,7 +877,8 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
+  color: #e2d2d2;
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -955,6 +958,74 @@ section,
   100% {
     transform: translateY(-10px);
   }
+}
+
+/* --------------------------------------------------------------
+# Tab Info Section
+-------------------------------------------------------------- */
+#tabInfo {
+  box-sizing: content-box;
+}
+
+#tabInfo li > button{
+  color: black;
+  font-weight: 400;
+}
+
+#tabInfo li > button.active {
+  border-bottom: 4px solid green;
+  font-weight: 700;
+}
+
+#tabInfoContent {
+  margin: 1.5rem 0;
+}
+
+#tabInfoContent #sekilas img{
+  aspect-ratio: 1 / 1;
+  min-height: 16rem;
+}
+
+#tabInfoContent h1 {
+  color: green;
+}
+
+#tabInfoContent #fasilitas img {
+  aspect-ratio: 1/1;
+  max-width: 48rem;
+}
+
+#tabInfoContent #pengajar #pengajarImages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+#tabInfoContent #pengajar img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  object-fit: cover;
+}
+
+#tabInfoContent #aktivitas #galeriImages{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+#tabInfoContent #aktivitas #galeriImages > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: center;
+}
+
+#tabInfoContent #aktivitas img {
+  aspect-ratio: 4/3;
+  width: 100%;
+  object-fit: cover;
+  clip-path: polygon(95% 0, 95% 45%, 100% 50%, 95% 55%, 95% 100%, 0 100%, 0 0);
 }
 
 /*--------------------------------------------------------------
