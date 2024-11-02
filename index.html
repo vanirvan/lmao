@@ -100,6 +100,14 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <div class="row row-cols-1 align-items-end">
+              <div class="cols">
+                <img src="assets/img/logo_meredeka.png" alt="logo_merdeka" style="width:25%"> 
+              </div>
+              <div class="cols d-flex justify-content-end">
+                <img src="assets/img/logo_sgs.png" alt="logo_sgs" style="width:25%">
+              </div>
+            </div>
             <h1>Selamat Datang di Program Studi</h1>
             <h1><span> Teknik Informatika</span></h1>
               <input type="button" value="Cari tau lebih" class="learnmore" onClick="document.getElementById('middle').scrollIntoView();"></input>
@@ -113,47 +121,53 @@
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
+
+    <!-- nav-tabs  -->
     <section id="middle" class="container">
       <ul class="nav nav-fill" id="tabInfo" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="sekilas-tab" data-bs-toggle="tab" data-bs-target="#sekilas" type="button" role="tab" aria-controls="sekilas" aria-selected="true">Sekilas</button>
+          <button class="nav-link active" id="tentang-tab" data-bs-toggle="tab" data-bs-target="#tentang" type="button" role="tab" aria-controls="tentang" aria-selected="true">Tentang</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="matkul-tab" data-bs-toggle="tab" data-bs-target="#matkul" type="button" role="tab" aria-controls="matkul" aria-selected="false">Mata Kuliah</button>
+          <button class="nav-link" id="visimisi-tab" data-bs-toggle="tab" data-bs-target="#visimisi" type="button" role="tab" aria-controls="visimisi" aria-selected="false">Visi dan Misi</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="fasilitas-tab" data-bs-toggle="tab" data-bs-target="#fasilitas" type="button" role="tab" aria-controls="fasilitas" aria-selected="false">Fasilitas</button>
+          <button class="nav-link" id="struktur-tab" data-bs-toggle="tab" data-bs-target="#struktur" type="button" role="tab" aria-controls="struktur" aria-selected="false">Struktur Organisasi</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pengajar-tab" data-bs-toggle="tab" data-bs-target="#pengajar" type="button" role="tab" aria-controls="pengajar" aria-selected="false">Pengajar</button>
+          <button class="nav-link" id="prestasi-tab" data-bs-toggle="tab" data-bs-target="#prestasi" type="button" role="tab" aria-controls="prestasi" aria-selected="false">Prestasi</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="aktivitas-tab" data-bs-toggle="tab" data-bs-target="#aktivitas" type="button" role="tab" aria-controls="aktivitas" aria-selected="false">Aktivitas</button>
+          <button class="nav-link" id="kurikulum-tab" data-bs-toggle="tab" data-bs-target="#kurikulum" type="button" role="tab" aria-controls="kurikulum" aria-selected="false">Kurikulum</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="hmps-tab" data-bs-toggle="tab" data-bs-target="#hmps" type="button" role="tab" aria-controls="hmps" aria-selected="false">HMPS</button>
         </li>
       </ul>
+
       <div class="tab-content" id="tabInfoContent">
-        <div class="tab-pane fade show active" id="sekilas" role="tabpanel" aria-labelledby="sekilas-tab">
+        <div class="tab-pane fade show active" id="tentang" role="tabpanel" aria-labelledby="tentang-tab">
           <div class="row row-cols-2 align-items-end">
             <div class="cols">
               <h1>Tentang UIKA</h1>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum, blanditiis obcaecati tempore exercitationem odio totam velit assumenda perspiciatis error officia aliquid natus quasi dolore aspernatur, voluptates dolor libero sed.</p>
             </div>
             <div class="cols d-flex justify-content-end">
-              <img src="assets/img/logo.png" alt="logo uika"/>
+              <img src="assets/img/logo.png" alt="logo-uika"/>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="matkul" role="tabpanel" aria-labelledby="matkul-tab">
+
+        <div class="tab-pane fade" id="visimisi" role="tabpanel" aria-labelledby="visimisi-tab">
           <h1 class="fw-bold">Rencana Studi</h1>
           <h5 class="mb-3 mt-5">Tahun Pertama</h5>
           <hr>
         </div>
-        <div class="tab-pane fade" id="fasilitas" role="tabpanel" aria-labelledby="fasilitas-tab">
+
+        <div class="tab-pane fade" id="struktur" role="tabpanel" aria-labelledby="struktur-tab">
           <div class="row">
             <div class="col-5">
               <h1 class="py-5 fw-bold">Fasilitas Kami</h1>
@@ -163,7 +177,8 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="pengajar" role="tabpanel" aria-labelledby="pengajar-tab">
+
+        <div class="tab-pane fade" id="prestasi" role="tabpanel" aria-labelledby="prestasi-tab">
           <h1 class="py-5 fw-bold">Pengajar</h1>
           <div id="pengajarImages">
             <img src="assets/img/bg.jpg" alt="pengajar"/>
@@ -175,7 +190,8 @@
             <img src="assets/img/bg.jpg" alt="pengajar"/>
           </div>
         </div>
-        <div class="tab-pane fade" id="aktivitas" role="tabpanel" aria-labelledby="aktivitas-tab">
+
+        <div class="tab-pane fade" id="kurikulum" role="tabpanel" aria-labelledby="kurikulum-tab">
           <h1 class="py-5 fw-bold">Galeri Aktifitas</h1>
           <div id="galeriImages">
             <div class="">
@@ -196,10 +212,12 @@
             </div>
           </div>
         </div>
+
         <div class="tab-pane fade" id="hmps" role="tabpanel" aria-labelledby="hmps-tab">d</div>
       </div>
     </section>
-
+    <!-- nav-tabs -->
+    
   </main>
 
   <footer id="footer" class="footer">
@@ -208,7 +226,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">BizLand</span>
+            <span class="sitename">UIKA</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
@@ -253,13 +271,9 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">BizLand</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">UIKA</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       </div>
     </div>
 
