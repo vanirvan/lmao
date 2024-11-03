@@ -22,16 +22,16 @@
   <!-- Vendor Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  
+
   <!-- Main CSS Files -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
-  
+
 <body class="index-page">
 
   <header id="header" class="header sticky-top">
 
-    
+
     <div class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between  ">
         <div class="social-links d-none d-md-flex align-items-center gap-3">
@@ -41,9 +41,12 @@
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
         <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a
-              href="mailto:ft@uika-bogor.ac.id">ft@uika-bogor.ac.id</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>0816-731-87</span></i>
+          <i class="bi bi-envelope d-flex align-items-center">
+            <a href="mailto:ft@uika-bogor.ac.id" target="_blank">ft@uika-bogor.ac.id</a>
+          </i>
+          <i class="bi bi-phone d-flex align-items-center ms-4">
+            <a href="https://wa.me/+628159118035" target="_blank">+628159118035</a>
+          </i>
         </div>
       </div>
     </div>
@@ -60,36 +63,62 @@
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">Profil</a></li>
-            <li><a href="#services">Program Studi</a></li>
-            <li><a href="#portfolio">Akademik</a></li>
-            <li><a href="#team">SDM & Sarana</a></li>
-            <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown link"><a href="#"><span>Profil</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
+                <li><a href="#middle">Tentang</a></li>
+                <li><a href="#middle">Visi dan Misi</a></li>
+                <li><a href="#middle">Struktur Organisasi</a></li>
+                <li><a href="#middle">Prestasi</a></li>
+                <li><a href="#middle">Akreditasi</a></li>
               </ul>
-            </li> -->
-            <li><a href="#contact">Kemahasiswaan</a></li>
+            </li>
+            <li class="dropdown"><a href="#"><span>Program Studi</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Teknik Sipil</a></li>
+                <li><a href="#">Teknik Mesin</a></li>
+                <li><a href="#">Teknik Elektro</a></li>
+                <li><a href="#">Teknik Informatika</a></li>
+                <li><a href="#">ilmu Lingkungan</a></li>
+                <li><a href="#">Sistem Informasi</a></li>
+                <li><a href="#">Rekayasa Pertanian dan Biosistem</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Akademik</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Publikasi Jurnal</a></li>
+                <li><a href="#">Kalender Akademik</a></li>
+                <li><a href="#">Jadwal Perkuliahan</a></li>
+                <li><a href="#">Jadwal UTS/UAS</a></li>
+                <li><a href="#">Kurikulum</a></li>
+                <li><a href="#">RPS</a></li>
+                <li><a href="#">Panduan Akademik</a></li>
+                <li><a href="#">Download</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>SDM & Sarana</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Dosen</a></li>
+                <li><a href="#">Staff</a></li>
+                <li><a href="#">Fasilitas</a></li>
+                <li><a href="#">Kehadiran</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Kemahasiswaan</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Organisasi Mahasiswa</a></li>
+                <li><a href="#">Beasiswa</a></li>
+              </ul>
+            </li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
         </nav>
-
       </div>
-
     </div>
-
   </header>
 
   <main class="main">
@@ -98,25 +127,27 @@
     <section id="hero" class="hero section light-background">
 
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-            <div class="row row-cols-1 align-items-end">
-              <div class="cols">
-                <img src="assets/img/logo_meredeka.png" alt="logo_merdeka" style="width:25%"> 
-              </div>
-              <div class="cols d-flex justify-content-end">
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <div class="d-flex d-inline-flex justify-content-start flex-row">
+              <div>
+                <img src="assets/img/logo_meredeka.png" alt="logo_merdeka" style="width:25%">
                 <img src="assets/img/logo_sgs.png" alt="logo_sgs" style="width:25%">
               </div>
             </div>
             <h1>Selamat Datang di Program Studi</h1>
             <h1><span> Teknik Informatika</span></h1>
-              <input type="button" value="Cari tau lebih" class="learnmore" onClick="document.getElementById('middle').scrollIntoView();"></input>
-            <!-- <div class="d-flex">
-              <a href="#about" class="btn-get-started">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
-                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
-                  Video</span></a>
-            </div> -->
+            <!-- <h1>Universitas Ibn Khaldun Bogor</h1> -->
+            <!-- <input type="button" value="Cari tau lebih" class="learnmore" onClick="document.getElementById('middle').scrollIntoView();"></input> -->
+            <!-- <a href="#middle" class="btn">Cari tau lebih lanjut</a> -->
+              <div class="arrow_container">
+                <a href="#kescroll">
+                  <span class="text mt-3">CARI TAU LEBIH</span>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                </a>
+              </div>
           </div>
         </div>
       </div>
@@ -126,54 +157,100 @@
 
 
     <!-- nav-tabs  -->
-    <section id="middle" class="container">
+    <section id="kescroll" class="container">
       <ul class="nav nav-fill" id="tabInfo" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="tentang-tab" data-bs-toggle="tab" data-bs-target="#tentang" type="button" role="tab" aria-controls="tentang" aria-selected="true">Tentang</button>
+          <button class="nav-link active" id="tentang-tab" data-bs-toggle="tab" data-bs-target="#tentang" type="button"
+            role="tab" aria-controls="tentang" aria-selected="true">Tentang</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="visimisi-tab" data-bs-toggle="tab" data-bs-target="#visimisi" type="button" role="tab" aria-controls="visimisi" aria-selected="false">Visi dan Misi</button>
+          <button class="nav-link" id="visimisi-tab" data-bs-toggle="tab" data-bs-target="#visimisi" type="button"
+            role="tab" aria-controls="visimisi" aria-selected="false">Visi dan Misi</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="struktur-tab" data-bs-toggle="tab" data-bs-target="#struktur" type="button" role="tab" aria-controls="struktur" aria-selected="false">Struktur Organisasi</button>
+          <button class="nav-link" id="struktur-tab" data-bs-toggle="tab" data-bs-target="#struktur" type="button"
+            role="tab" aria-controls="struktur" aria-selected="false">Struktur Organisasi</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="prestasi-tab" data-bs-toggle="tab" data-bs-target="#prestasi" type="button" role="tab" aria-controls="prestasi" aria-selected="false">Prestasi</button>
+          <button class="nav-link" id="prestasi-tab" data-bs-toggle="tab" data-bs-target="#prestasi" type="button"
+            role="tab" aria-controls="prestasi" aria-selected="false">Prestasi</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="kurikulum-tab" data-bs-toggle="tab" data-bs-target="#kurikulum" type="button" role="tab" aria-controls="kurikulum" aria-selected="false">Kurikulum</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="hmps-tab" data-bs-toggle="tab" data-bs-target="#hmps" type="button" role="tab" aria-controls="hmps" aria-selected="false">HMPS</button>
+          <button class="nav-link" id="kurikulum-tab" data-bs-toggle="tab" data-bs-target="#kurikulum" type="button"
+            role="tab" aria-controls="kurikulum" aria-selected="false">Kurikulum</button>
         </li>
       </ul>
 
       <div class="tab-content" id="tabInfoContent">
         <div class="tab-pane fade show active" id="tentang" role="tabpanel" aria-labelledby="tentang-tab">
-          <div class="row row-cols-2 align-items-end">
+          <div class="row align-items-end">
             <div class="cols">
-              <h1>Tentang UIKA</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum, blanditiis obcaecati tempore exercitationem odio totam velit assumenda perspiciatis error officia aliquid natus quasi dolore aspernatur, voluptates dolor libero sed.</p>
+              <h1 id="tentangTab">Tentang Program Studi Teknik Informatika</h1>
+              <p>PSTI merupakan program studi yang ke empat berdiri di fakultas Teknik dan Sains. Seiring dengan
+                perkembangan kebutuhan akan tenaga teknik di bidang Komputerisasi, Fakultas Teknik dan Sains memiliki 7
+                program studi yaitu Teknik Informatika, Teknik Mesin, Teknik Elektro, Teknik Informatika, Rekayasa
+                Pertanian dan Biosistem, Sistem Informasi, dan Ilmu lingkungan. Kemajuan Teknologi informasi mendorong
+                calon mahasiswa yang berminat untuk mendalami bidang Informatika. Meskipun demikian, mahasiswa baru di
+                PSTI UIKA tetap ada tiap tahunnya. Alumni angkatan pertama tetah menjadi salah satu corong publikasi
+                bagi PSTI, yang memperkenalkan keberadaan program studi pada kerabat dan kolega. Upaya peningkatan
+                kualitas terus diupayakan salah satunya adalah dengan penerapan sistem penjaminan mutu internal dan
+                sistem manajemen operasional pendidikan ISO 21001 serta meraih peringkat akreditasi B pada tahun 2019.
+                Mahasiswa dimotivasi agar dapat berperan aktif dalam kegiatan kompetisi yang bersifat akademik maupun
+                non akademik. Kerja sama jurusan dalam bidang pelayanan dan pengabdian masyarakat juga terus
+                ditingkatkan. Pada tahun 2015, PSTI dan FTS melakukan perbaikan secara menyeluruh dan komprehensif,
+                mulai dari peningkatan kualitas dan kuantitas SDM, perbaikan manajemen, perbaikan proses belajar
+                mengajar, peningkatan secara berkala di bidang sarana dan prasarana, serta peninjauan secara berkala
+                kurikulum PSTI, sehingga pada tahun 2019, peringkat akreditasi PSTI UIKA Bogor berada di posisi B.
+              </p>
+              <p>
+                Skala Kota dan Kabupaten Bogor, PSTI telah mendapat pengakuan yang baik dari kelompok masyarakat,
+                pemerintah, serta industri. Hal ini dapat ditelusuri dari hasil tracer study. Beberapa alumni PSTI saat
+                ini menjabat posisi penting di Dinas. Sedangkan, untuk kegiatan mahasiswa meraih beberapa prestasi.
+              </p>
+              <p>
+                Kondisi eksternal yang sangat mengancam eksistensi PSTI UIKA adalah pandemi COVID 19 pada tahun 2020
+                sampai dengan 2021. Kebijakan pemerintah untuk menghentikan semua kegiatan perkuliahan tatap muka,
+                penelitian, dan pengabdian masyarakat cukup mempengaruhi kinerja PSTI. Meskipun demikian, kinerja dosen
+                cukup baik di masa pandemi, dengan semakin banyaknya jumlah karya tulis dosen di jurnal-jurnal nasional
+                maupun internasional
+              </p>
+              <h1>Video Profile</h1>
+              <hr>
+              <video width="800" height="450" controls style="display: block; margin: auto;">
+                <source src="assets/vid/vid-profile.mp4" type="video/mp4">
+              </video>
             </div>
-            <div class="cols d-flex justify-content-end">
-              <img src="assets/img/logo.png" alt="logo-uika"/>
-            </div>
+            <!-- <div class="cols col-3 d-flex">
+              <img src="assets/img/logo.png" alt="logo-uika" />
+            </div> -->
+          </div>
+          <div>
+
           </div>
         </div>
 
         <div class="tab-pane fade" id="visimisi" role="tabpanel" aria-labelledby="visimisi-tab">
-          <h1 class="fw-bold">Rencana Studi</h1>
-          <h5 class="mb-3 mt-5">Tahun Pertama</h5>
+          <!-- <h1 class="fw-bold text-center">Visi dan Misi</h1> -->
           <hr>
+          <h2>Visi</h2>
+          <p>Menjadi Program Studi Terkemuka Bidang Informatika Dengan Lulusan Islami Berdaya Saing Regional Tahun 2025.
+          </p>
+          <h2>Misi</h2>
+          <ol>
+            <li>Meningkatkan kualitas Tridharma Program Studi secara berkelanjutan.</li>
+            <li>Mengembangkan budaya inovasi dalam ilmu pengetahuan.</li>
+            <li>Meningkatkan akses dan peran program studi bagi peningkatan taraf dan kualitas hidup masyarakat.</li>
+            <li>Meningkatkan kualitas penyelenggaraan tata pamong.</li>
+          </ol>
         </div>
 
         <div class="tab-pane fade" id="struktur" role="tabpanel" aria-labelledby="struktur-tab">
-          <div class="row">
+          <div class="row d-flex flex-column">
             <div class="col-5">
               <h1 class="py-5 fw-bold">Struktur Organisasi</h1>
             </div>
-            <div class="col-7 d-flex">
-              <img src="assets/img/struktur.jpeg" alt="struktur-organisasi" />
+            <div class="col-12 ">
+              <img class="object-fit-cover" src="assets/img/struktur.jpeg" alt="struktur-organisasi" />
             </div>
           </div>
         </div>
@@ -192,49 +269,49 @@
                 </tr>
               </thead>
               <tbody>
-              <tr>
+                <tr>
                   <td>1</td>
                   <td>Gelaran Inovasi Daerah (GID)</td>
                   <td>Juara I</td>
                   <td>2020</td>
                   <td>Bappedalitbang Kabupaten Bogor</td>
-              </tr>
-              <tr>
+                </tr>
+                <tr>
                   <td>2</td>
                   <td>Gelaran Inovasi Daerah (GID)</td>
                   <td>Juara II</td>
                   <td>2020</td>
                   <td>Bappedalitbang Kabupaten Bogor</td>
-              </tr>
-              <tr>
+                </tr>
+                <tr>
                   <td>3</td>
                   <td>Gelaran Inovasi Daerah (GID)</td>
                   <td>Juara III</td>
                   <td>2020</td>
                   <td>Bappedalitbang Kabupaten Bogor</td>
-              </tr>
-              <tr>
+                </tr>
+                <tr>
                   <td>4</td>
                   <td>Pemilihan Mahasiswa Berprestasi Tk. LLDIKTI Wilayah IV</td>
                   <td>13 Besar</td>
                   <td>2021</td>
                   <td>LLDIKTI Wilayah IV Jawa Barat & Banten</td>
-              </tr>
-              <tr>
+                </tr>
+                <tr>
                   <td>5</td>
                   <td>Lomba Karya Tulis</td>
                   <td>Juara I</td>
                   <td>2021</td>
                   <td>Agri-Informatika JIKA</td>
-              </tr>
-              <tr>
+                </tr>
+                <tr>
                   <td>6</td>
                   <td>Unjuk Gelar Porprov 2022</td>
                   <td>Medali Perunggu</td>
                   <td>2022</td>
                   <td>Porprov XIV 2022 KONI Jawa Barat</td>
-              </tr>
-              <tr>
+                </tr>
+                <tr>
                   <td>7</td>
                   <td>Lomba Berbaris Jarak Pendek 800 Meter Mix Porprov 2022</td>
                   <td>Medali Perunggu</td>
@@ -264,37 +341,17 @@
                 </tr>
               </tbody>
             </table>
-          </div>          
-           
-        </div>
-
-        <div class="tab-pane fade" id="kurikulum" role="tabpanel" aria-labelledby="kurikulum-tab">
-          <h1 class="py-5 fw-bold">Galeri Aktifitas</h1>
-          <div id="galeriImages">
-            <div class="">
-              <img src="assets/img/services.jpg" alt="aktivitas" />
-              <h4 class="fw-bold">Gooners Competition</h4>
-            </div>
-            <div class="">
-              <img src="assets/img/services.jpg" alt="aktivitas" />
-              <h4 class="fw-bold">Pelatihan Talenta Muda Sigma</h4>
-            </div>
-            <div class="">
-              <img src="assets/img/services.jpg" alt="aktivitas" />
-              <h4 class="fw-bold">Seminar Nasional Kejomokan Cyber</h4>
-            </div>
-            <div class="">
-              <img src="assets/img/services.jpg" alt="aktivitas" />
-              <h4 class="fw-bold">Pensi</h4>
-            </div>
           </div>
         </div>
 
-        <div class="tab-pane fade" id="hmps" role="tabpanel" aria-labelledby="hmps-tab">d</div>
+        <div class="tab-pane fade" id="kurikulum" role="tabpanel" aria-labelledby="kurikulum-tab">
+          
+          </div>
+        </div>
       </div>
     </section>
     <!-- nav-tabs -->
-    
+
   </main>
 
   <footer id="footer" class="footer">
