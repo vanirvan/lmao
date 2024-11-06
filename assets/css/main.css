@@ -767,11 +767,15 @@ section,
 -------------------------------------------------------------- */
 #tabInfo {
   box-sizing: content-box;
+  width: 100%;
+  overflow-x: auto;
+  flex-wrap: nowrap;
 }
 
 #tabInfo li > button{
   color: black;
   font-weight: 400;
+  min-width: max-content;
 }
 
 #tabInfo li > button.active {
