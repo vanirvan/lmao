@@ -783,6 +783,15 @@ section,
   margin: 1.5rem 0;
 }
 
+#tabInfoContent #tentang video {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  aspect-ratio: 16/9;
+
+  margin: 0 auto
+}
+
 #tabInfoContent #sekilas img{
   aspect-ratio: 1 / 1;
   min-height: 16rem;
